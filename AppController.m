@@ -13,12 +13,12 @@
 - (id)init
 {
 	[super init];
-	//NSNotificationCenter *nc;
-//	nc = [NSNotificationCenter defaultCenter];
-//	[nc addObserver:self
-//		   selector:@selector(handleContentChange:)
-//			   name:NSManagedObjectContextObjectsDidChangeNotification
-//			 object:nil];
+	NSNotificationCenter *nc;
+	nc = [NSNotificationCenter defaultCenter];
+	[nc addObserver:self
+		   selector:@selector(handleContentChange:)
+			   name:NSManagedObjectContextObjectsDidChangeNotification
+			 object:nil];
 	return self;
 }
 - (IBAction)addCharacter:(id)sender
