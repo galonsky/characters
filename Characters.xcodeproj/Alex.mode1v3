@@ -231,8 +231,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -302,7 +300,7 @@
 							<real>164</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>345 238 901 652 0 0 1680 1028 </string>
+						<string>374 184 901 652 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -313,6 +311,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -330,14 +330,14 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FA9F99C80FFD9EE5008C1CF2</string>
+										<string>FAD51C650FFDA8CB003FE32A</string>
 										<key>history</key>
 										<array>
 											<string>FADAE1630FFD93F3006CA442</string>
 											<string>FADAE1710FFD941A006CA442</string>
 											<string>FADAE1720FFD941A006CA442</string>
-											<string>FA99DB8F0FFD98CE00DF0C41</string>
-											<string>FA9F99B10FFD9DE1008C1CF2</string>
+											<string>FAD51C5D0FFDA8CB003FE32A</string>
+											<string>FAD51C5E0FFDA8CB003FE32A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -346,6 +346,12 @@
 											<string>FADAE1450FFD9365006CA442</string>
 											<string>FADAE14D0FFD9365006CA442</string>
 											<string>FADAE1740FFD941A006CA442</string>
+											<string>FAD51C5F0FFDA8CB003FE32A</string>
+											<string>FAD51C600FFDA8CB003FE32A</string>
+											<string>FAD51C610FFDA8CB003FE32A</string>
+											<string>FAD51C620FFDA8CB003FE32A</string>
+											<string>FAD51C630FFDA8CB003FE32A</string>
+											<string>FAD51C640FFDA8CB003FE32A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -359,7 +365,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {693, 433}}</string>
 								<key>RubberWindowFrame</key>
-								<string>345 238 901 652 0 0 1680 1028 </string>
+								<string>374 184 901 652 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -379,7 +385,7 @@
 								<key>Frame</key>
 								<string>{{0, 438}, {693, 173}}</string>
 								<key>RubberWindowFrame</key>
-								<string>345 238 901 652 0 0 1680 1028 </string>
+								<string>374 184 901 652 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -403,9 +409,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>FA9F99C90FFD9EE5008C1CF2</string>
+				<string>FAD51C660FFDA8CB003FE32A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>FA9F99CA0FFD9EE5008C1CF2</string>
+				<string>FAD51C670FFDA8CB003FE32A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -539,13 +545,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>FADAE05F0FFD629F006CA442</string>
 		<string>/Users/Alex/characters/Characters.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>345 238 901 652 0 0 1680 1028 </string>
+	<string>374 184 901 652 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -742,13 +746,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>FA9F99CC0FFD9EE5008C1CF2</string>
+				<string>FAD51C680FFDA8CB003FE32A</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>FA9F99CD0FFD9EE5008C1CF2</string>
-				<string>FA9F99CE0FFD9EE5008C1CF2</string>
-				<string>FA9F99CF0FFD9EE5008C1CF2</string>
-				<string>FA9F99D00FFD9EE5008C1CF2</string>
-				<string>FA9F99D10FFD9EE5008C1CF2</string>
+				<string>FAD51C690FFDA8CB003FE32A</string>
+				<string>FAD51C6A0FFDA8CB003FE32A</string>
+				<string>FAD51C6B0FFDA8CB003FE32A</string>
+				<string>FAD51C6C0FFDA8CB003FE32A</string>
+				<string>FAD51C6D0FFDA8CB003FE32A</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

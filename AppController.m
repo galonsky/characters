@@ -21,4 +21,9 @@
 	[tableView editColumn:0 row:row withEvent:nil select:YES];
 }
 
+- (IBAction)reveal:(id)sender
+{
+	
+}
+
 @end

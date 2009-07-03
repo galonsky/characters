@@ -12,7 +12,10 @@
 @interface AppController : NSObject {
 	IBOutlet NSTableView *tableView;
 	IBOutlet NSArrayController *charController;
+	IBOutlet NSTextField *pinyinField;
+	IBOutlet NSTextField *charField;
 }
 - (IBAction)addCharacter:(id)sender;
+- (IBAction)reveal:(id)sender;
 
 @end
