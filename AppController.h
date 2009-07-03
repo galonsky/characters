@@ -15,6 +15,7 @@
 	IBOutlet NSTextField *pinyinField;
 	IBOutlet NSTextField *charField;
 	IBOutlet NSLevelIndicator *progress;
+	IBOutlet NSButton *reveal;
 	NSMutableArray *array;
 	int index;
 }

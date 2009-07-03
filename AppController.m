@@ -30,6 +30,7 @@
 - (IBAction)start:(id)sender
 {
 	[array removeAllObjects];
+	[progress setIntValue:0];
 	NSArray *constantArray;
 	constantArray = [charController arrangedObjects];
 	for(NSManagedObject *obj in constantArray)
@@ -65,11 +66,13 @@
 
 - (IBAction)reveal:(id)sender
 {
+	[reveal setEnabled:NO];
 	[charField setStringValue:[[array objectAtIndex:index] valueForKey:@"characters"]];
 }
 
 - (IBAction)incorrect:(id)sender
 {
+	[reveal setEnabled:YES];
 	[self updateProgress];
 	[charField setStringValue:@""];
 	[self next];
@@ -81,9 +84,15 @@
 	[self updateProgress];
 	if([array count] == 0)
 	{
+		[reveal setEnabled:NO];
 		[pinyinField setStringValue:@"Complete"];
 	}
-	else [self next];
+	else 
+	{
+		[reveal setEnabled:YES];
+		[self next];
+	}
+	
 }
 - (void)updateProgress
 {
@@ -92,6 +101,10 @@
 	float percentage = (1 - [left floatValue] / [total floatValue]) * 100;
 	[progress setFloatValue:percentage];
 	NSLog(@"%f", percentage);
+}
+- (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender
+{
+	return NO;
 }
 
 @end

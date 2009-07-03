@@ -668,6 +668,14 @@
 					</object>
 					<int key="connectionID">100086</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">reveal</string>
+						<reference key="source" ref="705363929"/>
+						<reference key="destination" ref="837613708"/>
+					</object>
+					<int key="connectionID">100087</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1071,7 +1079,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100086</int>
+			<int key="maxID">100087</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1106,6 +1114,7 @@
 							<string>charField</string>
 							<string>pinyinField</string>
 							<string>progress</string>
+							<string>reveal</string>
 							<string>tableView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -1114,6 +1123,7 @@
 							<string>NSTextField</string>
 							<string>NSTextField</string>
 							<string>NSLevelIndicator</string>
+							<string>NSButton</string>
 							<string>NSTableView</string>
 						</object>
 					</object>
