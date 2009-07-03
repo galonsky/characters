@@ -14,6 +14,7 @@
 	IBOutlet NSArrayController *charController;
 	IBOutlet NSTextField *pinyinField;
 	IBOutlet NSTextField *charField;
+	IBOutlet NSLevelIndicator *progress;
 	NSMutableArray *array;
 	int index;
 }
@@ -24,4 +25,5 @@
 - (IBAction)start:(id)sender;
 - (void)next;
 - (void)display;
+- (void)updateProgress;
 @end

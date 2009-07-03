@@ -205,6 +205,22 @@
 								<int key="NSPeriodicInterval">25</int>
 							</object>
 						</object>
+						<object class="NSLevelIndicator" id="481430972">
+							<reference key="NSNextResponder" ref="749383244"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{112, 201}, {276, 18}}</string>
+							<reference key="NSSuperview" ref="749383244"/>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSLevelIndicatorCell" key="NSCell" id="96694291">
+								<int key="NSCellFlags">130560</int>
+								<int key="NSCellFlags2">0</int>
+								<reference key="NSControlView" ref="481430972"/>
+								<double key="NSMaxValue">1.000000e+02</double>
+								<double key="NSWarningValue">2.000000e+00</double>
+								<double key="NSCriticalValue">2.000000e+00</double>
+								<int key="NSIndicatorStyle">1</int>
+							</object>
+						</object>
 					</object>
 					<string key="NSFrameSize">{500, 500}</string>
 					<reference key="NSSuperview"/>
@@ -644,6 +660,14 @@
 					</object>
 					<int key="connectionID">100083</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">progress</string>
+						<reference key="source" ref="705363929"/>
+						<reference key="destination" ref="481430972"/>
+					</object>
+					<int key="connectionID">100086</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -712,6 +736,7 @@
 							<reference ref="256894356"/>
 							<reference ref="136226496"/>
 							<reference ref="89496876"/>
+							<reference ref="481430972"/>
 						</object>
 						<reference key="parent" ref="753378953"/>
 					</object>
@@ -917,6 +942,20 @@
 						<reference key="object" ref="919526235"/>
 						<reference key="parent" ref="89496876"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">100084</int>
+						<reference key="object" ref="481430972"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="96694291"/>
+						</object>
+						<reference key="parent" ref="749383244"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">100085</int>
+						<reference key="object" ref="96694291"/>
+						<reference key="parent" ref="481430972"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -963,6 +1002,8 @@
 					<string>100072.IBPluginDependency</string>
 					<string>100081.IBPluginDependency</string>
 					<string>100082.IBPluginDependency</string>
+					<string>100084.IBPluginDependency</string>
+					<string>100085.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -974,6 +1015,8 @@
 					<string>{{400, 420}, {500, 500}}</string>
 					<boolean value="YES"/>
 					<string>{{524, 176}, {240, 450}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1028,7 +1071,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100083</int>
+			<int key="maxID">100086</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1062,6 +1105,7 @@
 							<string>charController</string>
 							<string>charField</string>
 							<string>pinyinField</string>
+							<string>progress</string>
 							<string>tableView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -1069,6 +1113,7 @@
 							<string>NSArrayController</string>
 							<string>NSTextField</string>
 							<string>NSTextField</string>
+							<string>NSLevelIndicator</string>
 							<string>NSTableView</string>
 						</object>
 					</object>

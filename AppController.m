@@ -70,6 +70,7 @@
 
 - (IBAction)incorrect:(id)sender
 {
+	[self updateProgress];
 	[charField setStringValue:@""];
 	[self next];
 }
@@ -77,11 +78,20 @@
 {
 	[charField setStringValue:@""];
 	[array removeObjectAtIndex:index];
+	[self updateProgress];
 	if([array count] == 0)
 	{
 		[pinyinField setStringValue:@"Complete"];
 	}
 	else [self next];
+}
+- (void)updateProgress
+{
+	NSNumber *total = [NSNumber numberWithUnsignedInt:[[charController arrangedObjects] count]];
+	NSNumber *left = [NSNumber numberWithUnsignedInt:[array count]];
+	float percentage = (1 - [left floatValue] / [total floatValue]) * 100;
+	[progress setFloatValue:percentage];
+	NSLog(@"%f", percentage);
 }
 
 @end
