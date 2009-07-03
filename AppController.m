@@ -44,10 +44,6 @@
 		[array addObject:newChar];
 	}
 	
-	for(Character *thisObj in array)
-	{
-		NSLog(@"%@", thisObj);
-	}
 	index = 0;
 	[self display];
 
