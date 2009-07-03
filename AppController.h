@@ -14,8 +14,9 @@
 	IBOutlet NSArrayController *charController;
 	IBOutlet NSTextField *pinyinField;
 	IBOutlet NSTextField *charField;
+	NSMutableArray *array;
 }
 - (IBAction)addCharacter:(id)sender;
 - (IBAction)reveal:(id)sender;
-
+- (void)handleContentChange:(NSNotification *)notification;
 @end
