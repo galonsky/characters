@@ -7,18 +7,19 @@
 //
 
 #import "AppController.h"
-
+#import "Character.h"
 
 @implementation AppController
 - (id)init
 {
 	[super init];
-	NSNotificationCenter *nc;
-	nc = [NSNotificationCenter defaultCenter];
-	[nc addObserver:self
-		   selector:@selector(handleContentChange:)
-			   name:NSManagedObjectContextObjectsDidChangeNotification
-			 object:nil];
+	array = [[NSMutableArray alloc] init];
+//	NSNotificationCenter *nc;
+//	nc = [NSNotificationCenter defaultCenter];
+//	[nc addObserver:self
+//		   selector:@selector(handleContentChange:)
+//			   name:NSManagedObjectContextObjectsDidChangeNotification
+//			 object:nil];
 	return self;
 }
 - (IBAction)addCharacter:(id)sender
@@ -32,39 +33,39 @@
 	[tableView editColumn:0 row:row withEvent:nil select:YES];
 }
 
-- (void)handleContentChange:(NSNotification *)notification
-{
-	array = [charController arrangedObjects];
-	NSLog(@"handle method called");
-}
 - (IBAction)start:(id)sender
 {
-	array = [charController arrangedObjects];
-	for(NSManagedObject *obj in array)
+	[array removeAllObjects];
+	NSArray *constantArray;
+	constantArray = [charController arrangedObjects];
+	for(NSManagedObject *obj in constantArray)
 	{
-		[obj setValue:[NSNumber numberWithBool:NO] forKey:@"correct"];
+		NSString *pinyin = [obj valueForKey:@"pinyin"];
+		NSString *characters = [obj valueForKey:@"characters"];
+		Character *newChar = [[Character alloc] init];
+		[newChar setValue:pinyin forKey:@"pinyin"];
+		[newChar setValue:characters forKey:@"characters"];
+		
+		[array addObject:newChar];
 	}
-	NSLog(@"start method called");
+	
+	for(Character *thisObj in array)
+	{
+		NSLog(@"%@", thisObj);
+	}
 	index = 0;
 	[self display];
+
 }
 - (void)next
 {
 	index++;
 	if(index >= [array count]) index = 0;
-	NSManagedObject *thisObj = [array objectAtIndex:index];
-	if([[thisObj valueForKey:@"correct"] isEqual:[NSNumber numberWithBool:YES]])
-	{
-		[self next];
-		return;
-	}
 	[self display];
 }
 
 - (void)display
 {
-	NSLog(@"display method called");
-	//NSLog(@"%@", [[array objectAtIndex:index] valueForKey:@"pinyin"]);
 	[pinyinField setStringValue:[[array objectAtIndex:index] valueForKey:@"pinyin"]];
 }
 
@@ -80,10 +81,13 @@
 }
 - (IBAction)correct:(id)sender
 {
-	NSManagedObject *thisObj = [array objectAtIndex:index];
-	[thisObj setValue:[NSNumber numberWithBool:YES] forKey:@"correct"];
 	[charField setStringValue:@""];
-	[self next];
+	[array removeObjectAtIndex:index];
+	if([array count] == 0)
+	{
+		[pinyinField setStringValue:@"Complete"];
+	}
+	else [self next];
 }
 
 @end

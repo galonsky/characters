@@ -22,7 +22,6 @@
 - (IBAction)correct:(id)sender;
 - (IBAction)incorrect:(id)sender;
 - (IBAction)start:(id)sender;
-- (void)handleContentChange:(NSNotification *)notification;
 - (void)next;
 - (void)display;
 @end
