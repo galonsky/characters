@@ -15,8 +15,14 @@
 	IBOutlet NSTextField *pinyinField;
 	IBOutlet NSTextField *charField;
 	NSMutableArray *array;
+	int index;
 }
 - (IBAction)addCharacter:(id)sender;
 - (IBAction)reveal:(id)sender;
+- (IBAction)correct:(id)sender;
+- (IBAction)incorrect:(id)sender;
+- (IBAction)start:(id)sender;
 - (void)handleContentChange:(NSNotification *)notification;
+- (void)next;
+- (void)display;
 @end
