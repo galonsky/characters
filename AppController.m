@@ -10,6 +10,15 @@
 
 
 @implementation AppController
-
+- (IBAction)addCharacter:(id)sender
+{
+	NSManagedObjectContext *context = [[[NSDocumentController sharedDocumentController] currentDocument] managedObjectContext];
+	NSManagedObject *newChar = [NSEntityDescription insertNewObjectForEntityForName:@"Character" inManagedObjectContext:context];
+	[charController addObject:newChar];
+	[charController rearrangeObjects];
+	NSArray *a = [charController arrangedObjects];
+	int row = [a indexOfObjectIdenticalTo:newChar];
+	[tableView editColumn:0 row:row withEvent:nil select:YES];
+}
 
 @end

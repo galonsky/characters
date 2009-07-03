@@ -10,7 +10,9 @@
 
 
 @interface AppController : NSObject {
-
+	IBOutlet NSTableView *tableView;
+	IBOutlet NSArrayController *charController;
 }
+- (IBAction)addCharacter:(id)sender;
 
 @end
