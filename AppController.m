@@ -14,12 +14,6 @@
 {
 	[super init];
 	array = [[NSMutableArray alloc] init];
-//	NSNotificationCenter *nc;
-//	nc = [NSNotificationCenter defaultCenter];
-//	[nc addObserver:self
-//		   selector:@selector(handleContentChange:)
-//			   name:NSManagedObjectContextObjectsDidChangeNotification
-//			 object:nil];
 	return self;
 }
 - (IBAction)addCharacter:(id)sender
