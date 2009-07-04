@@ -13,6 +13,7 @@
 - (id)init
 {
 	[super init];
+	[self processCSV];
 	array = [[NSMutableArray alloc] init];
 	return self;
 }
@@ -101,6 +102,18 @@
 - (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender
 {
 	return NO;
+}
+- (void)processCSV
+{
+	NSData *data = [NSData dataWithContentsOfFile:@"/Users/Alex/Desktop/l1d1-1.csv"];
+	NSString *string = [NSString stringWithUTF8String:[data bytes]];
+	NSArray *lines = [string componentsSeparatedByString:@"\n"];
+	for(NSString *line in lines)
+	{
+		//NSLog(@"%@", line);
+		NSArray *parts = [line componentsSeparatedByString:@";"];
+		NSLog(@"%@, %@", [parts objectAtIndex:0], [parts objectAtIndex:1]);
+	}
 }
 
 @end

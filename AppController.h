@@ -27,4 +27,5 @@
 - (void)next;
 - (void)display;
 - (void)updateProgress;
+- (void)processCSV;
 @end
