@@ -300,7 +300,7 @@
 							<real>164</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>25 53 1167 845 0 0 1680 1028 </string>
+						<string>132 154 1167 845 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FAB51A920FFEEEAB0007D991</string>
+										<string>FAB51A9A0FFF33AF0007D991</string>
 										<key>history</key>
 										<array>
 											<string>FAB30B770FFDE207009AC140</string>
@@ -363,7 +363,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {959, 537}}</string>
 								<key>RubberWindowFrame</key>
-								<string>25 53 1167 845 0 0 1680 1028 </string>
+								<string>132 154 1167 845 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -383,7 +383,7 @@
 								<key>Frame</key>
 								<string>{{0, 542}, {959, 262}}</string>
 								<key>RubberWindowFrame</key>
-								<string>25 53 1167 845 0 0 1680 1028 </string>
+								<string>132 154 1167 845 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -551,7 +551,7 @@
 		<string>/Users/Alex/characters/Characters.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>25 53 1167 845 0 0 1680 1028 </string>
+	<string>132 154 1167 845 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

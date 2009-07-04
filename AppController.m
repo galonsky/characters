@@ -108,8 +108,9 @@
 	NSData *data = [NSData dataWithContentsOfFile:@"/Users/Alex/Desktop/l1d1-1.csv"];
 	NSString *string = [NSString stringWithUTF8String:[data bytes]];
 	NSArray *lines = [string componentsSeparatedByString:@"\n"];
-	for(NSString *line in lines)
+	for(int i = 0; i < [lines count] - 1; i++)
 	{
+		NSString *line = [lines objectAtIndex:i];
 		//NSLog(@"%@", line);
 		NSArray *parts = [line componentsSeparatedByString:@";"];
 		NSLog(@"%@, %@", [parts objectAtIndex:0], [parts objectAtIndex:1]);
