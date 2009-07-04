@@ -13,7 +13,6 @@
 - (id)init
 {
 	[super init];
-	[self processCSV];
 	array = [[NSMutableArray alloc] init];
 	return self;
 }
@@ -103,9 +102,9 @@
 {
 	return NO;
 }
-- (void)processCSV
+- (IBAction)processCSV:(NSString *)file
 {
-	NSData *data = [NSData dataWithContentsOfFile:@"/Users/Alex/Desktop/l1d1-1.csv"];
+	NSData *data = [NSData dataWithContentsOfFile:file];
 	NSString *string = [NSString stringWithUTF8String:[data bytes]];
 	NSArray *lines = [string componentsSeparatedByString:@"\n"];
 	for(int i = 0; i < [lines count] - 1; i++)
@@ -114,7 +113,25 @@
 		//NSLog(@"%@", line);
 		NSArray *parts = [line componentsSeparatedByString:@";"];
 		NSLog(@"%@, %@", [parts objectAtIndex:0], [parts objectAtIndex:1]);
+		
+		NSManagedObjectContext *context = [[[NSDocumentController sharedDocumentController] currentDocument] managedObjectContext];
+		NSManagedObject *newChar = [NSEntityDescription insertNewObjectForEntityForName:@"Character" inManagedObjectContext:context];
+		[newChar setValue:[parts objectAtIndex:0] forKey:@"pinyin"];
+		[newChar setValue:[parts objectAtIndex:1] forKey:@"characters"];
+		[charController addObject:newChar];
 	}
+}
+
+- (IBAction)showPanel:(id)sender
+{
+	NSOpenPanel *open = [NSOpenPanel openPanel];
+	[open beginForDirectory:nil file:nil types:nil modelessDelegate:self didEndSelector:@selector(filePanelDidEnd:returnCode:contextInfo:) contextInfo:NULL];	
+}
+
+- (void)filePanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
+{
+	NSArray *files = [sheet filenames];
+	[self processCSV:[files objectAtIndex:0]];
 }
 
 @end

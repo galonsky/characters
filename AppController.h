@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-
 @interface AppController : NSObject {
 	IBOutlet NSTableView *tableView;
 	IBOutlet NSArrayController *charController;
@@ -27,5 +26,7 @@
 - (void)next;
 - (void)display;
 - (void)updateProgress;
-- (void)processCSV;
+- (void)filePanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo;
+- (IBAction)processCSV:(NSString *)file;
+- (IBAction)showPanel:(id)sender;
 @end
