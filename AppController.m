@@ -45,6 +45,10 @@
 	}
 	
 	index = 0;
+	[start setTitle:@"Restart"];
+	[reveal setEnabled:YES];
+	[correct setEnabled:YES];
+	[incorrect setEnabled:YES];
 	[self display];
 
 }
@@ -81,6 +85,9 @@
 	if([array count] == 0)
 	{
 		[reveal setEnabled:NO];
+		[correct setEnabled:NO];
+		[incorrect setEnabled:NO];
+		[start setTitle:@"Start"];
 		[pinyinField setStringValue:@"Complete"];
 	}
 	else 
@@ -104,15 +111,12 @@
 }
 - (void)processCSV:(NSString *)file
 {
-	NSData *data = [NSData dataWithContentsOfFile:file];
-	NSString *string = [NSString stringWithUTF8String:[data bytes]];
+	NSString *string = [NSString stringWithContentsOfFile:file encoding:NSUTF8StringEncoding error:NULL];
 	NSArray *lines = [string componentsSeparatedByString:@"\n"];
 	for(int i = 0; i < [lines count] - 1; i++)
 	{
 		NSString *line = [lines objectAtIndex:i];
-		//NSLog(@"%@", line);
 		NSArray *parts = [line componentsSeparatedByString:@";"];
-		NSLog(@"%@, %@", [parts objectAtIndex:1], [parts objectAtIndex:2]);
 		
 		NSManagedObjectContext *context = [[[NSDocumentController sharedDocumentController] currentDocument] managedObjectContext];
 		NSManagedObject *newChar = [NSEntityDescription insertNewObjectForEntityForName:@"Character" inManagedObjectContext:context];
@@ -125,7 +129,7 @@
 - (IBAction)showPanel:(id)sender
 {
 	NSOpenPanel *open = [NSOpenPanel openPanel];
-	[open beginForDirectory:nil file:nil types:nil modelessDelegate:self didEndSelector:@selector(filePanelDidEnd:returnCode:contextInfo:) contextInfo:NULL];	
+	[open beginForDirectory:@"/Users/Alex/Desktop/csv/" file:nil types:nil modelessDelegate:self didEndSelector:@selector(filePanelDidEnd:returnCode:contextInfo:) contextInfo:NULL];	
 }
 
 - (void)filePanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo

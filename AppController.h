@@ -15,6 +15,10 @@
 	IBOutlet NSTextField *charField;
 	IBOutlet NSLevelIndicator *progress;
 	IBOutlet NSButton *reveal;
+	IBOutlet NSButton *correct;
+	IBOutlet NSButton *incorrect;
+	IBOutlet NSButton *start;
+	IBOutlet NSDrawer *drawer;
 	NSMutableArray *array;
 	int index;
 }

@@ -36,7 +36,7 @@
 				<string key="NSClassName">NSApplication</string>
 			</object>
 			<object class="NSWindowTemplate" id="753378953">
-				<int key="NSWindowStyleMask">15</int>
+				<int key="NSWindowStyleMask">7</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{196, 103}, {500, 359}}</string>
 				<int key="NSWTFlags">603979776</int>
@@ -132,7 +132,7 @@
 							<reference key="NSSuperview" ref="749383244"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="56987129">
-								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags">604110336</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Reveal</string>
 								<reference key="NSSupport" ref="440625695"/>
@@ -152,7 +152,7 @@
 							<reference key="NSSuperview" ref="749383244"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="401992382">
-								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags">604110336</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Correct</string>
 								<reference key="NSSupport" ref="440625695"/>
@@ -172,7 +172,7 @@
 							<reference key="NSSuperview" ref="749383244"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="77965603">
-								<int key="NSCellFlags">67239424</int>
+								<int key="NSCellFlags">604110336</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Incorrect</string>
 								<reference key="NSSupport" ref="440625695"/>
@@ -676,6 +676,38 @@
 					</object>
 					<int key="connectionID">100087</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">drawer</string>
+						<reference key="source" ref="705363929"/>
+						<reference key="destination" ref="617671744"/>
+					</object>
+					<int key="connectionID">100089</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">correct</string>
+						<reference key="source" ref="705363929"/>
+						<reference key="destination" ref="136226496"/>
+					</object>
+					<int key="connectionID">100090</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">incorrect</string>
+						<reference key="source" ref="705363929"/>
+						<reference key="destination" ref="256894356"/>
+					</object>
+					<int key="connectionID">100091</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">start</string>
+						<reference key="source" ref="705363929"/>
+						<reference key="destination" ref="89496876"/>
+					</object>
+					<int key="connectionID">100092</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -1018,11 +1050,11 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{481, 345}, {500, 359}}</string>
+					<string>{{244, 407}, {500, 359}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{481, 345}, {500, 359}}</string>
+					<string>{{244, 407}, {500, 359}}</string>
 					<boolean value="YES"/>
-					<string>{{748, 376}, {240, 320}}</string>
+					<string>{{539, 175}, {240, 320}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1079,7 +1111,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100087</int>
+			<int key="maxID">100092</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1095,10 +1127,12 @@
 							<string>correct:</string>
 							<string>incorrect:</string>
 							<string>reveal:</string>
+							<string>showPanel:</string>
 							<string>start:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -1112,17 +1146,25 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>charController</string>
 							<string>charField</string>
+							<string>correct</string>
+							<string>drawer</string>
+							<string>incorrect</string>
 							<string>pinyinField</string>
 							<string>progress</string>
 							<string>reveal</string>
+							<string>start</string>
 							<string>tableView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSArrayController</string>
 							<string>NSTextField</string>
+							<string>NSButton</string>
+							<string>NSDrawer</string>
+							<string>NSButton</string>
 							<string>NSTextField</string>
 							<string>NSLevelIndicator</string>
+							<string>NSButton</string>
 							<string>NSButton</string>
 							<string>NSTableView</string>
 						</object>
