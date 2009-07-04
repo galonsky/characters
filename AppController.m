@@ -112,12 +112,12 @@
 		NSString *line = [lines objectAtIndex:i];
 		//NSLog(@"%@", line);
 		NSArray *parts = [line componentsSeparatedByString:@";"];
-		NSLog(@"%@, %@", [parts objectAtIndex:0], [parts objectAtIndex:1]);
+		NSLog(@"%@, %@", [parts objectAtIndex:1], [parts objectAtIndex:2]);
 		
 		NSManagedObjectContext *context = [[[NSDocumentController sharedDocumentController] currentDocument] managedObjectContext];
 		NSManagedObject *newChar = [NSEntityDescription insertNewObjectForEntityForName:@"Character" inManagedObjectContext:context];
-		[newChar setValue:[parts objectAtIndex:0] forKey:@"pinyin"];
-		[newChar setValue:[parts objectAtIndex:1] forKey:@"characters"];
+		[newChar setValue:[parts objectAtIndex:1] forKey:@"pinyin"];
+		[newChar setValue:[parts objectAtIndex:2] forKey:@"characters"];
 		[charController addObject:newChar];
 	}
 }
