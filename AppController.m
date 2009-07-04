@@ -8,6 +8,7 @@
 
 #import "AppController.h"
 #import "Character.h"
+#import "NSMutableArray_Shuffling.h"
 
 @implementation AppController
 - (id)init
@@ -43,7 +44,8 @@
 		
 		[array addObject:newChar];
 	}
-	
+	srandom(time(NULL));
+	[array shuffle];
 	index = 0;
 	[start setTitle:@"Restart"];
 	[reveal setEnabled:YES];

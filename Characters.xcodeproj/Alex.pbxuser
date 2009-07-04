@@ -133,7 +133,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1152, 560}}";
 			sepNavSelRange = "{341, 0}";
-			sepNavVisRange = "{35, 632}";
+			sepNavVisRange = "{20, 647}";
 		};
 	};
 	2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {
