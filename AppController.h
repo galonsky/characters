@@ -27,6 +27,6 @@
 - (void)display;
 - (void)updateProgress;
 - (void)filePanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo;
-- (IBAction)processCSV:(NSString *)file;
+- (void)processCSV:(NSString *)file;
 - (IBAction)showPanel:(id)sender;
 @end

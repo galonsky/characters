@@ -102,7 +102,7 @@
 {
 	return NO;
 }
-- (IBAction)processCSV:(NSString *)file
+- (void)processCSV:(NSString *)file
 {
 	NSData *data = [NSData dataWithContentsOfFile:file];
 	NSString *string = [NSString stringWithUTF8String:[data bytes]];
