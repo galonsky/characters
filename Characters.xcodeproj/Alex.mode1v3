@@ -231,6 +231,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,7 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>0</integer>
+									<integer>19</integer>
+									<integer>18</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -302,7 +305,7 @@
 							<real>164</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>110 120 1421 852 0 0 1680 1028 </string>
+						<string>172 103 1421 852 0 0 1680 1028 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -313,14 +316,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppController.m</string>
+								<string>InfoPlist.strings</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppController.m</string>
+										<string>InfoPlist.strings</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FA76FB910FFFC2190041CFC5</string>
+										<string>FA76FB9A0FFFC46D0041CFC5</string>
 										<key>history</key>
 										<array>
 											<string>FAB30B770FFDE207009AC140</string>
@@ -341,7 +342,9 @@
 											<string>FA7294810FFFBBFB0074D15D</string>
 											<string>FA7294820FFFBBFB0074D15D</string>
 											<string>FA7294B20FFFBCF20074D15D</string>
-											<string>FA7294BC0FFFBD580074D15D</string>
+											<string>FA76FB950FFFC46D0041CFC5</string>
+											<string>FA76FB960FFFC46D0041CFC5</string>
+											<string>FA76FB970FFFC46D0041CFC5</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -352,6 +355,8 @@
 											<string>FAB30BE40FFE9E22009AC140</string>
 											<string>FAB30BE50FFE9E22009AC140</string>
 											<string>FA72948E0FFFBBFB0074D15D</string>
+											<string>FA76FB980FFFC46D0041CFC5</string>
+											<string>FA76FB990FFFC46D0041CFC5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -365,7 +370,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1213, 544}}</string>
 								<key>RubberWindowFrame</key>
-								<string>110 120 1421 852 0 0 1680 1028 </string>
+								<string>172 103 1421 852 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -385,7 +390,7 @@
 								<key>Frame</key>
 								<string>{{0, 549}, {1213, 262}}</string>
 								<key>RubberWindowFrame</key>
-								<string>110 120 1421 852 0 0 1680 1028 </string>
+								<string>172 103 1421 852 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -551,7 +556,7 @@
 		<string>/Users/Alex/characters/Characters.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>110 120 1421 852 0 0 1680 1028 </string>
+	<string>172 103 1421 852 0 0 1680 1028 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

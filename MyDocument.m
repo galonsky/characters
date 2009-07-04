@@ -30,4 +30,10 @@
     // user interface preparation code
 }
 
+- (BOOL)prepareSavePanel:(NSSavePanel *)savePanel
+{
+	[savePanel setCanSelectHiddenExtension:NO];
+	return YES;
+}
+
 @end
