@@ -30,28 +30,38 @@
 
 - (IBAction)start:(id)sender
 {
-	[array removeAllObjects];
-	[progress setIntValue:0];
-	NSArray *constantArray;
-	constantArray = [charController arrangedObjects];
-	for(NSManagedObject *obj in constantArray)
+	if([[charController arrangedObjects] count] != 0)
 	{
-		NSString *pinyin = [obj valueForKey:@"pinyin"];
-		NSString *characters = [obj valueForKey:@"characters"];
-		Character *newChar = [[Character alloc] init];
-		[newChar setValue:pinyin forKey:@"pinyin"];
-		[newChar setValue:characters forKey:@"characters"];
-		
-		[array addObject:newChar];
+		[array removeAllObjects];
+		[progress setIntValue:0];
+		NSArray *constantArray;
+		constantArray = [charController arrangedObjects];
+		for(NSManagedObject *obj in constantArray)
+		{
+			NSString *pinyin = [obj valueForKey:@"pinyin"];
+			NSString *characters = [obj valueForKey:@"characters"];
+			Character *newChar = [[Character alloc] init];
+			[newChar setValue:pinyin forKey:@"pinyin"];
+			[newChar setValue:characters forKey:@"characters"];
+			
+			[array addObject:newChar];
+		}
+		srandom(time(NULL));
+		[array shuffle];
+		index = 0;
+		[start setTitle:@"Restart"];
+		[reveal setEnabled:YES];
+		[correct setEnabled:YES];
+		[incorrect setEnabled:YES];
+		[self display];
 	}
-	srandom(time(NULL));
-	[array shuffle];
-	index = 0;
-	[start setTitle:@"Restart"];
-	[reveal setEnabled:YES];
-	[correct setEnabled:YES];
-	[incorrect setEnabled:YES];
-	[self display];
+	else
+	{
+		[pinyinField setStringValue:@"No data"];
+		[reveal setEnabled:NO];
+		[correct setEnabled:NO];
+		[incorrect setEnabled:NO];
+	}
 
 }
 - (void)next

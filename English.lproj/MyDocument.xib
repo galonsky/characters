@@ -8,8 +8,8 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="100022"/>
 			<integer value="100024"/>
+			<integer value="100022"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -400,7 +400,7 @@
 							</object>
 							<reference ref="590033864"/>
 						</object>
-						<string key="NSFrame">{{20, 49}, {200, 251}}</string>
+						<string key="NSFrame">{{20, 48}, {200, 251}}</string>
 						<reference key="NSSuperview" ref="904378113"/>
 						<reference key="NSNextKeyView" ref="163091926"/>
 						<int key="NSsFlags">50</int>
@@ -414,17 +414,21 @@
 					<object class="NSButton" id="136675613">
 						<reference key="NSNextResponder" ref="904378113"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{20, 19}, {70, 23}}</string>
+						<string key="NSFrame">{{20, 19}, {24, 22}}</string>
 						<reference key="NSSuperview" ref="904378113"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="578950724">
 							<int key="NSCellFlags">-2080244224</int>
 							<int key="NSCellFlags2">134217728</int>
-							<string key="NSContents">Add</string>
+							<string key="NSContents"/>
 							<reference key="NSSupport" ref="440625695"/>
 							<reference key="NSControlView" ref="136675613"/>
 							<int key="NSButtonFlags">-2033434369</int>
 							<int key="NSButtonFlags2">162</int>
+							<object class="NSCustomResource" key="NSNormalImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">NSAddTemplate</string>
+							</object>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">400</int>
@@ -434,17 +438,21 @@
 					<object class="NSButton" id="283014333">
 						<reference key="NSNextResponder" ref="904378113"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{98, 19}, {70, 23}}</string>
+						<string key="NSFrame">{{43, 19}, {24, 22}}</string>
 						<reference key="NSSuperview" ref="904378113"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="22227984">
 							<int key="NSCellFlags">-2080244224</int>
 							<int key="NSCellFlags2">134217728</int>
-							<string key="NSContents">Delete</string>
+							<string key="NSContents"/>
 							<reference key="NSSupport" ref="440625695"/>
 							<reference key="NSControlView" ref="283014333"/>
 							<int key="NSButtonFlags">-2033434369</int>
 							<int key="NSButtonFlags2">162</int>
+							<object class="NSCustomResource" key="NSNormalImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">NSRemoveTemplate</string>
+							</object>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">400</int>
@@ -452,7 +460,7 @@
 						</object>
 					</object>
 				</object>
-				<string key="NSFrameSize">{240, 320}</string>
+				<string key="NSFrameSize">{240, 319}</string>
 				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 			</object>
@@ -1054,7 +1062,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>{{244, 407}, {500, 359}}</string>
 					<boolean value="YES"/>
-					<string>{{539, 175}, {240, 320}}</string>
+					<string>{{455, 383}, {240, 319}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
