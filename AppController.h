@@ -20,6 +20,7 @@
 	IBOutlet NSButton *start;
 	IBOutlet NSDrawer *drawer;
 	NSMutableArray *array;
+	NSMutableDictionary *charPin;
 	int index;
 }
 - (IBAction)addCharacter:(id)sender;
@@ -33,4 +34,5 @@
 - (void)filePanelDidEnd:(NSOpenPanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo;
 - (void)processCSV:(NSString *)file;
 - (IBAction)showPanel:(id)sender;
+- (void)setTheTable;
 @end

@@ -15,6 +15,8 @@
 {
 	[super init];
 	array = [[NSMutableArray alloc] init];
+	charPin = [[NSMutableDictionary alloc] init];
+	[self setTheTable];
 	return self;
 }
 - (IBAction)addCharacter:(id)sender
@@ -148,6 +150,22 @@
 {
 	NSArray *files = [sheet filenames];
 	[self processCSV:[files objectAtIndex:0]];
+}
+
+- (void)setTheTable
+{
+	NSString *path = @"/Users/Alex/Desktop/dict.txt";
+	NSData *data = [NSData dataWithContentsOfFile:path];
+	NSString *file = [NSString stringWithUTF8String:[data bytes]];
+	
+	NSArray *lines = [file componentsSeparatedByString:@"\n"];
+	
+	for(NSString *line in lines)
+	{
+		//NSLog(@"%@", line);
+		NSArray *parts = [line componentsSeparatedByString:@"\t"];
+		[charPin setObject:[parts objectAtIndex:1] forKey:[parts objectAtIndex:0]];
+	}
 }
 
 @end
