@@ -35,4 +35,5 @@
 - (void)processCSV:(NSString *)file;
 - (IBAction)showPanel:(id)sender;
 - (void)setTheTable;
+- (void)translate;
 @end

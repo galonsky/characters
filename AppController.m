@@ -21,6 +21,7 @@
 }
 - (IBAction)addCharacter:(id)sender
 {
+	[self translate];
 	NSManagedObjectContext *context = [[[NSDocumentController sharedDocumentController] currentDocument] managedObjectContext];
 	NSManagedObject *newChar = [NSEntityDescription insertNewObjectForEntityForName:@"Character" inManagedObjectContext:context];
 	[charController addObject:newChar];
@@ -167,5 +168,15 @@
 		[charPin setObject:[parts objectAtIndex:1] forKey:[parts objectAtIndex:0]];
 	}
 }
-
+- (void)translate
+{
+	
+	for(NSManagedObject *obj in [charController arrangedObjects])
+	{
+		if([[obj valueForKey:@"pinyin"] isEqualTo:@""] || [obj valueForKey:@"pinyin"] == NULL)
+		{
+			[obj setValue:[charPin objectForKey:[obj valueForKey:@"characters"]] forKey:@"pinyin"];
+		}
+	}
+}
 @end
