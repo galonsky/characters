@@ -175,7 +175,10 @@
 	{
 		if([[obj valueForKey:@"pinyin"] isEqualTo:@""] || [obj valueForKey:@"pinyin"] == NULL)
 		{
-			[obj setValue:[charPin objectForKey:[obj valueForKey:@"characters"]] forKey:@"pinyin"];
+			if(![[obj valueForKey:@"characters"] isEqualTo:@""] && [obj valueForKey:@"characters"] != NULL)
+			{
+				[obj setValue:[charPin objectForKey:[obj valueForKey:@"characters"]] forKey:@"pinyin"];
+			}
 		}
 	}
 }
