@@ -2,14 +2,14 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="7.03">
 	<data>
 		<int key="IBDocument.SystemTarget">1040</int>
-		<string key="IBDocument.SystemVersion">9J61</string>
+		<string key="IBDocument.SystemVersion">9L31a</string>
 		<string key="IBDocument.InterfaceBuilderVersion">677</string>
-		<string key="IBDocument.AppKitVersion">949.46</string>
+		<string key="IBDocument.AppKitVersion">949.54</string>
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="100034"/>
 			<integer value="100024"/>
+			<integer value="100034"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -220,6 +220,38 @@
 								<double key="NSCriticalValue">2.000000e+00</double>
 								<int key="NSIndicatorStyle">1</int>
 							</object>
+						</object>
+						<object class="NSImageView" id="940269859">
+							<reference key="NSNextResponder" ref="749383244"/>
+							<int key="NSvFlags">-2147483392</int>
+							<object class="NSMutableSet" key="NSDragTypes">
+								<bool key="EncodedWithXMLCoder">YES</bool>
+								<object class="NSMutableArray" key="set.sortedObjects">
+									<bool key="EncodedWithXMLCoder">YES</bool>
+									<string>Apple PDF pasteboard type</string>
+									<string>Apple PICT pasteboard type</string>
+									<string>Apple PNG pasteboard type</string>
+									<string>NSFilenamesPboardType</string>
+									<string>NeXT Encapsulated PostScript v1.2 pasteboard type</string>
+									<string>NeXT TIFF v4.0 pasteboard type</string>
+								</object>
+							</object>
+							<string key="NSFrame">{{186, 176}, {128, 128}}</string>
+							<reference key="NSSuperview" ref="749383244"/>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSImageCell" key="NSCell" id="334291602">
+								<int key="NSCellFlags">130560</int>
+								<int key="NSCellFlags2">33554432</int>
+								<object class="NSCustomResource" key="NSContents">
+									<string key="NSClassName">NSImage</string>
+									<string key="NSResourceName">Success</string>
+								</object>
+								<int key="NSAlign">0</int>
+								<int key="NSScale">0</int>
+								<int key="NSStyle">0</int>
+								<bool key="NSAnimates">YES</bool>
+							</object>
+							<bool key="NSEditable">YES</bool>
 						</object>
 					</object>
 					<string key="NSFrameSize">{500, 359}</string>
@@ -724,6 +756,14 @@
 					</object>
 					<int key="connectionID">100093</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">success</string>
+						<reference key="source" ref="705363929"/>
+						<reference key="destination" ref="940269859"/>
+					</object>
+					<int key="connectionID">100096</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -793,6 +833,7 @@
 							<reference ref="481430972"/>
 							<reference ref="872630673"/>
 							<reference ref="89496876"/>
+							<reference ref="940269859"/>
 						</object>
 						<reference key="parent" ref="753378953"/>
 					</object>
@@ -1012,6 +1053,20 @@
 						<reference key="object" ref="96694291"/>
 						<reference key="parent" ref="481430972"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">100094</int>
+						<reference key="object" ref="940269859"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="334291602"/>
+						</object>
+						<reference key="parent" ref="749383244"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">100095</int>
+						<reference key="object" ref="334291602"/>
+						<reference key="parent" ref="940269859"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1060,15 +1115,19 @@
 					<string>100082.IBPluginDependency</string>
 					<string>100084.IBPluginDependency</string>
 					<string>100085.IBPluginDependency</string>
+					<string>100094.IBViewIntegration.shadowBlurRadius</string>
+					<string>100094.IBViewIntegration.shadowColor</string>
+					<string>100094.IBViewIntegration.shadowOffsetHeight</string>
+					<string>100094.IBViewIntegration.shadowOffsetWidth</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{244, 407}, {500, 359}}</string>
+					<string>{{477, 270}, {500, 359}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{244, 407}, {500, 359}}</string>
+					<string>{{477, 270}, {500, 359}}</string>
 					<boolean value="YES"/>
 					<string>{{545, 177}, {240, 319}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1105,6 +1164,10 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<real value="0.000000e+00"/>
+					<reference ref="521104885"/>
+					<real value="0.000000e+00"/>
+					<real value="0.000000e+00"/>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -1127,7 +1190,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">100093</int>
+			<int key="maxID">100096</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1169,6 +1232,7 @@
 							<string>progress</string>
 							<string>reveal</string>
 							<string>start</string>
+							<string>success</string>
 							<string>tableView</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -1182,6 +1246,7 @@
 							<string>NSLevelIndicator</string>
 							<string>NSButton</string>
 							<string>NSButton</string>
+							<string>NSImageView</string>
 							<string>NSTableView</string>
 						</object>
 					</object>

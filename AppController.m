@@ -103,7 +103,8 @@
 		[correct setEnabled:NO];
 		[incorrect setEnabled:NO];
 		[start setTitle:@"Start"];
-		[pinyinField setStringValue:@"Complete"];
+		[pinyinField setStringValue:@""];
+		[success setHidden:NO];
 	}
 	else 
 	{

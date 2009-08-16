@@ -19,6 +19,7 @@
 	IBOutlet NSButton *incorrect;
 	IBOutlet NSButton *start;
 	IBOutlet NSDrawer *drawer;
+	IBOutlet NSImageView *success;
 	NSMutableArray *array;
 	NSMutableDictionary *charPin;
 	int index;
