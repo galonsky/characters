@@ -156,7 +156,7 @@
 
 - (void)setTheTable
 {
-	NSString *path = @"/Users/Alex/Desktop/dict.txt";
+	NSString *path = @"/Users/Alex/Desktop/new.u8";
 	NSData *data = [NSData dataWithContentsOfFile:path];
 	NSString *file = [NSString stringWithUTF8String:[data bytes]];
 	
@@ -165,9 +165,12 @@
 	for(NSString *line in lines)
 	{
 		//NSLog(@"%@", line);
-		NSArray *parts = [line componentsSeparatedByString:@"\t"];
-		[charPin setObject:[parts objectAtIndex:1] forKey:[parts objectAtIndex:0]];
+		NSArray *parts = [line componentsSeparatedByString:@"["];
+		NSString *chars = [[parts objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+		NSString *pinyin = [[[parts objectAtIndex:1] componentsSeparatedByString:@"]"] objectAtIndex:0];
+		[charPin setObject:pinyin forKey:chars];
 	}
+	NSLog(@"done");
 }
 - (void)translate
 {
@@ -176,10 +179,7 @@
 	{
 		if([[obj valueForKey:@"pinyin"] isEqualTo:@""] || [obj valueForKey:@"pinyin"] == NULL)
 		{
-			if([[obj valueForKey:@"characters"] length] == 1)
-			{
-				[obj setValue:[charPin objectForKey:[obj valueForKey:@"characters"]] forKey:@"pinyin"];
-			}
+			[obj setValue:[charPin objectForKey:[obj valueForKey:@"characters"]] forKey:@"pinyin"];
 		}
 	}
 }
