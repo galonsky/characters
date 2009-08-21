@@ -176,7 +176,7 @@
 	{
 		if([[obj valueForKey:@"pinyin"] isEqualTo:@""] || [obj valueForKey:@"pinyin"] == NULL)
 		{
-			if(![[obj valueForKey:@"characters"] isEqualTo:@""] && [obj valueForKey:@"characters"] != NULL)
+			if([[obj valueForKey:@"characters"] length] == 1)
 			{
 				[obj setValue:[charPin objectForKey:[obj valueForKey:@"characters"]] forKey:@"pinyin"];
 			}
