@@ -27,7 +27,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					20,
-					705,
+					780,
 					20,
 					48,
 					43,
@@ -91,8 +91,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 272511187;
-			PBXWorkspaceStateSaveDate = 272511187;
+			PBXPerProjectTemplateStateSaveDate = 273272680;
+			PBXWorkspaceStateSaveDate = 273272680;
 		};
 		perUserProjectItems = {
 			FA634778103898C500928E6B = FA634778103898C500928E6B /* PBXBookmark */;
@@ -554,6 +554,9 @@
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
 		dylibVariantSuffix = "";
@@ -566,6 +569,7 @@
 		name = Characters;
 		savedGlobals = {
 		};
+		showTypeColumn = 0;
 		sourceDirectories = (
 		);
 		variableFormatDictionary = {
@@ -577,6 +581,9 @@
 		isSCMEnabled = 0;
 		scmConfiguration = {
 			repositoryName = Google;
+			repositoryNamesForRoots = {
+				"" = characters;
+			};
 		};
 	};
 	FADAE0460FFD60EC006CA442 /* Code sense */ = {
