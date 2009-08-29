@@ -18,6 +18,7 @@
 		FA6347751038981C00928E6B /* Success.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6347741038981C00928E6B /* Success.png */; };
 		FA76FC03100001CD0041CFC5 /* NSMutableArray_Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = FA76FC02100001CD0041CFC5 /* NSMutableArray_Shuffling.m */; };
 		FAB30BD20FFE9C58009AC140 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB30BD10FFE9C58009AC140 /* Character.m */; };
+		FABF93051049E32B00E4FEF1 /* new.u8 in Resources */ = {isa = PBXBuildFile; fileRef = FABF93041049E32B00E4FEF1 /* new.u8 */; };
 		FADAE04A0FFD61C1006CA442 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADAE0490FFD61C1006CA442 /* AppController.m */; };
 		FADE6CEF10377276003CF56D /* characters.icns in Resources */ = {isa = PBXBuildFile; fileRef = FADE6CEE10377276003CF56D /* characters.icns */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		FA76FC02100001CD0041CFC5 /* NSMutableArray_Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArray_Shuffling.m; sourceTree = "<group>"; };
 		FAB30BD00FFE9C58009AC140 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
 		FAB30BD10FFE9C58009AC140 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		FABF93041049E32B00E4FEF1 /* new.u8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = new.u8; sourceTree = "<group>"; };
 		FADAE0480FFD61C1006CA442 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		FADAE0490FFD61C1006CA442 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		FADE6CEE10377276003CF56D /* characters.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = characters.icns; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6347741038981C00928E6B /* Success.png */,
+				FABF93041049E32B00E4FEF1 /* new.u8 */,
 				FADE6CEE10377276003CF56D /* characters.icns */,
 				2F7446A70DB6BCF400F9684A /* MainMenu.xib */,
 				2F7446A90DB6BCF400F9684A /* MyDocument.xib */,
@@ -203,6 +206,7 @@
 				2F7446AC0DB6BCF400F9684A /* MyDocument.xib in Resources */,
 				FADE6CEF10377276003CF56D /* characters.icns in Resources */,
 				FA6347751038981C00928E6B /* Success.png in Resources */,
+				FABF93051049E32B00E4FEF1 /* new.u8 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

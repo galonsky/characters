@@ -156,7 +156,8 @@
 
 - (void)setTheTable
 {
-	NSString *path = @"/Users/Alex/Desktop/new.u8";
+	NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/Contents/Resources/new.u8"];
+	
 	NSData *data = [NSData dataWithContentsOfFile:path];
 	NSString *file = [NSString stringWithUTF8String:[data bytes]];
 	
@@ -170,7 +171,6 @@
 		NSString *pinyin = [[[parts objectAtIndex:1] componentsSeparatedByString:@"]"] objectAtIndex:0];
 		[charPin setObject:pinyin forKey:chars];
 	}
-	NSLog(@"done");
 }
 - (void)translate
 {
