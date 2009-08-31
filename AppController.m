@@ -56,6 +56,7 @@
 		[reveal setEnabled:YES];
 		[correct setEnabled:YES];
 		[incorrect setEnabled:YES];
+		[success setHidden:YES];
 		[self display];
 	}
 	else
