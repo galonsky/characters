@@ -27,7 +27,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					20,
-					780,
+					340,
 					20,
 					48,
 					43,
@@ -91,15 +91,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 274853920;
-			PBXWorkspaceStateSaveDate = 274853920;
+			PBXPerProjectTemplateStateSaveDate = 274859785;
+			PBXWorkspaceStateSaveDate = 274859785;
 		};
 		perUserProjectItems = {
 			FA55EE93104C6DF60046952C = FA55EE93104C6DF60046952C /* PBXTextBookmark */;
 			FA55EE96104C6DF80046952C = FA55EE96104C6DF80046952C /* PBXTextBookmark */;
 			FA55EEA4104C6E1B0046952C = FA55EEA4104C6E1B0046952C /* PBXTextBookmark */;
 			FABF93091049E3BD00E4FEF1 = FABF93091049E3BD00E4FEF1 /* PBXTextBookmark */;
-			FAE5A37C1061F03D00201BBF /* PBXTextBookmark */ = FAE5A37C1061F03D00201BBF /* PBXTextBookmark */;
+			FAE5A37C1061F03D00201BBF = FAE5A37C1061F03D00201BBF /* PBXTextBookmark */;
 		};
 		sourceControlManager = FADAE0450FFD60EC006CA442 /* Source Control */;
 		userBuildSettings = {

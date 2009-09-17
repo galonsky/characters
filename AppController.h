@@ -20,7 +20,6 @@
 	IBOutlet NSDrawer *drawer;
 	IBOutlet NSImageView *success;
 	NSMutableArray *array;
-	NSMutableDictionary *charPin;
 	int index;
 }
 - (IBAction)addCharacter:(id)sender;

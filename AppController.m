@@ -9,13 +9,13 @@
 #import "AppController.h"
 #import "Character.h"
 #import "NSMutableArray_Shuffling.h"
+static NSMutableDictionary *charPin;
 
 @implementation AppController
 - (id)init
 {
 	[super init];
 	array = [[NSMutableArray alloc] init];
-	charPin = [[NSMutableDictionary alloc] init];
 	[self setTheTable];
 	return self;
 }
@@ -157,20 +157,25 @@
 
 - (void)setTheTable
 {
-	NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/Contents/Resources/new.u8"];
-	
-	NSData *data = [NSData dataWithContentsOfFile:path];
-	NSString *file = [NSString stringWithUTF8String:[data bytes]];
-	
-	NSArray *lines = [file componentsSeparatedByString:@"\n"];
-	
-	for(NSString *line in lines)
+	if(charPin == NULL)
 	{
-		//NSLog(@"%@", line);
-		NSArray *parts = [line componentsSeparatedByString:@"["];
-		NSString *chars = [[parts objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-		NSString *pinyin = [[[parts objectAtIndex:1] componentsSeparatedByString:@"]"] objectAtIndex:0];
-		[charPin setObject:pinyin forKey:chars];
+		
+		charPin = [[NSMutableDictionary alloc] init];
+		NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingString:@"/Contents/Resources/new.u8"];
+		
+		NSData *data = [NSData dataWithContentsOfFile:path];
+		NSString *file = [NSString stringWithUTF8String:[data bytes]];
+		
+		NSArray *lines = [file componentsSeparatedByString:@"\n"];
+		
+		for(NSString *line in lines)
+		{
+			//NSLog(@"%@", line);
+			NSArray *parts = [line componentsSeparatedByString:@"["];
+			NSString *chars = [[parts objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+			NSString *pinyin = [[[parts objectAtIndex:1] componentsSeparatedByString:@"]"] objectAtIndex:0];
+			[charPin setObject:pinyin forKey:chars];
+		}
 	}
 }
 - (void)translate
