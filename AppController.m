@@ -48,6 +48,7 @@ static NSMutableDictionary *charPin;
 			[newChar setValue:characters forKey:@"characters"];
 			
 			[array addObject:newChar];
+			[newChar release];
 		}
 		srandom(time(NULL));
 		[array shuffle];
